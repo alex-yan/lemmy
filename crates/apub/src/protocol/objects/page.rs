@@ -44,8 +44,6 @@ pub struct Page {
   #[serde(default)]
   #[serde(deserialize_with = "crate::deserialize_skip_error")]
   pub(crate) source: Option<Source>,
-  /// deprecated, use attachment field
-  pub(crate) url: Option<Url>,
   #[serde(default)]
   #[serde(deserialize_with = "crate::deserialize_skip_error")]
   pub(crate) attachment: Option<Attachment>,
